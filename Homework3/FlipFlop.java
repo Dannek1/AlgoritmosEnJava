@@ -32,14 +32,14 @@ public class FlipFlop {
 	}else if(num % 3==0){
 
    		// si el numero es divisible dentro de 3 imprima "Flip"
-<<<<<<< HEAD
+
 		salida("Flip");
-=======
+
 			System.out.println("Flip");
 
    		// si el numero es divisible dentro de 5 imprima "Flop"
 			System.out.println("Flop");
->>>>>>> 7343ad9e8ef011b2f40d039466164410c5a548ed
+
 
 	} else if(num % 5==0){
 		
