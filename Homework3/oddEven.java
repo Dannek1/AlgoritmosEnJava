@@ -10,15 +10,29 @@ Dado un numero 'n' identifique si es par o impar
 
 public class oddEven {   
 
+    public static String salida(String x){
+
+		System.out.println(x);
+		return x;
+}
+
    public static void main(String[] args) {
       
-      	System.out.println(args[0]);
+      	int x =Integer.parseInt(args[0]);
+	
+	int resultado=x%2;
 
-   		// si el numero es impar
-   			System.out.println("numero es impar");
+	switch (resultado){
 
-   		// si el numero es par
-   			System.out.println("numero es par");
+		// si el numero es par
+		case 0: salida("el numero es par");
+			break;
+
+		// si el numero es impar
+		default: salida("el numero es impar"); 	
+			break;
+
+   		}
 
    }
 }

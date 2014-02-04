@@ -14,13 +14,35 @@ mostrar
 
 public class productToNumber {   
 
+   public static String salida(String x){
+
+		System.out.println(x);
+		return x;
+}
+
    public static void main(String[] args) {
-   		int resultado = 0;
-   		System.out.println(args[0]);
+   		long resultado = 1;
+		String cadena="";
+   		int x=Integer.parseInt(args[0]);
+		
+		for(int i=1;i<=x;i++)
+		{
 
+		//operando numeros
+		resultado=resultado*i;
+		
+		if (i==1){
+		//cadena de mensaje para valor 1
+		cadena=cadena+i;
 
-   		System.out.println("el producto es: "+resultado);
+		}else {
+		//cadena de mensaje para valor final
+		cadena=cadena+"x"+i;
+	}
+   		
       
-   }
+   
+}	salida("La operacion fue\n"+ cadena + "\nel producto es:"+ resultado);
 
+}		
 }
